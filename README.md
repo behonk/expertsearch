@@ -23,6 +23,18 @@ The application should fulfill the following requirements:
 We encourage the use of any libraries for everything except the search functionality, in which we want to see your simple algorithm approach.
 
 
+### Completed Tasks
+* members table - name, website, short_url
+* friendships table - a join table member to member
+* tags table - member_id and header text
+* member - create new, list member, show member
+* async task to shorten url via tinyurl
+* async task to scrape headers from website
+
+### Incomplete Tasks
+* Ability to Add Friends
+* Expert search with path of introduction
+
 ### Run in Development
 * In one console, run `rails jobs:work` to start the delayed jobs worker.  See https://github.com/collectiveidea/delayed_job
 * start by going to http://localhost:3000/member

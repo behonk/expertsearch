@@ -1,24 +1,23 @@
-# README
+# Expert Search
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### Requirements
 
-Things you may want to cover:
+The application should fulfill the following requirements:
 
-* Ruby version
+* A member can be created using their name and a personal website address.
 
-* System dependencies
+* When a member is created, all the heading (h1-h3) values are pulled in from the website to that members profile.
 
-* Configuration
+* The website url is shortened (e.g. using http://goo.gl).
 
-* Database creation
+* After the member has been added, I can define their friendships with other existing members. Friendships are bi-directional i.e. If David is a friend of Oliver, Oliver is always a friend of David as well.
 
-* Database initialization
+* The interface should list all members with their name, short url and the number of friends.
 
-* How to run the test suite
+* Viewing an actual member should display the name, website URL, shortening, website headings, and links to their friends' pages.
 
-* Services (job queues, cache servers, search engines, etc.)
+* Now, looking at Alan's profile, I want to find experts in the application who write about a certain topic and are not already friends of Alan.
 
-* Deployment instructions
+* Results should show the path of introduction from Alan to the expert e.g. Alan wants to get introduced to someone who writes about 'Dog breeding'. Claudia's website has a heading tag "Dog breeding in Ukraine". Bart knows Alan and Claudia. An example search result would be Alan -> Bart -> Claudia ("Dog breeding in Ukraine").
 
-* ...
+We encourage the use of any libraries for everything except the search functionality, in which we want to see your simple algorithm approach.

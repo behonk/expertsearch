@@ -1,0 +1,17 @@
+<h1>New Member</h1>
+
+<p><%= button_to 'Go to Member List', member_index_url, method: :get %></p>
+
+<%= form_with scope: :member, url: member_index_path, local: true do |form| %>
+  <p>
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </p>
+
+  <p>
+    <%= form.label :website %>
+    <%= form.text_field :website %>
+  </p>
+
+  <p><%= form.submit %></p>
+<% end %>

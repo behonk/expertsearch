@@ -1,0 +1,29 @@
+<p><%= button_to 'Go to Member List', member_index_url, method: :get %></p>
+<p>
+  <strong>Name:</strong> <%= @member.name %>
+</p>
+<p>
+  <strong>Website:</strong> <%= @member.website %>
+</p>
+<p>
+  <strong>Short Url:</strong> <%= @member.short_url %>
+</p>
+<p>
+  <strong>Friends:</strong>&nbsp;&nbsp;
+  <% @member.friends.each do |friend| %>
+  <p style="margin-left: 5em"><%=link_to friend.name, member_path(friend) %></p>
+<% end %>
+</p>
+<p>
+  <strong>Web Headings:</strong>
+  <% @member.tags.each do |header| %>
+  <p style="margin-left: 5em"><%=header.text %></p>
+  <% end %>
+</p>
+<p>
+  <strong>Search:</strong>
+  <%= form_with url: search_topic_member_url, method: :post do |form| %>
+    <%= form.text_field :search %>
+    <%= submit_tag('Search')%>
+  <% end %>
+</p>

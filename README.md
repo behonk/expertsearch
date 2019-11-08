@@ -25,3 +25,4 @@ We encourage the use of any libraries for everything except the search functiona
 
 ### Run in Development
 * In one console, run `rails jobs:work` to start the delayed jobs worker.  See https://github.com/collectiveidea/delayed_job
+* start by going to http://localhost:3000/member
